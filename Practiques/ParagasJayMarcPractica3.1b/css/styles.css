@@ -77,3 +77,8 @@ bd-placeholder-img {
   img{
     border-radius: 10px;
   }
+
+  .formulario{
+    margin-top: 100px;
+    text-align: center;
+  }

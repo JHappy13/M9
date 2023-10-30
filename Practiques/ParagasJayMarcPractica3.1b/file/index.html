@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+    <script src="../js/script.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,7 +79,12 @@
           <img src="../sources/img/logo.png" alt="Logo" width="40" height="36" class="me-2" >
             <span class="fs-4">Curling Sports</span>
         </a>
-        <button class="ms-auto btn btn-primary">Contactanos</button>
+        <i class="fa fa-phone"></i>
+        <button type="button" class="btn btn-primary" onclick="openForm()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>&nbsp;CONTACTAR
+      </button>
     </header>
     
 
@@ -85,8 +92,8 @@
         <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">Curling Website</h1>
             <p class="col-md-8 fs-4">
-                On this website you will find information about the world of curling. you can find out about your favorite team, legends...</p>
-            <button class="btn btn-primary btn-lg" type="button">Read more</button>
+              En esta web encontrarás información sobre el mundo del curling. podrás enterarte de tu equipo favorito, leyendas...</p>
+            <button class="btn btn-primary btn-lg" type="button" onclick="openReadMore()">Leer más</button>
         </div>
         </div>
 
@@ -95,8 +102,8 @@
                 <div class="h-100 p-5 text-bg-dark rounded-3">
                     <div class="row">
                         <div class="col-5">
-                            <h2>Spain wins the silver medal</h2>
-                            <p>The Spanish team has won the silver medal in the mixed world championship.</p>
+                            <h2>España bicampeon del mundial</h2>
+                            <p>El equipo mixto de españa gano la medalla de plata</p>
                         </div>
                         <div class="col"><img src="../sources/img/curlingEspana.jpg" alt="" width="300"></div>
                     </div>
@@ -104,9 +111,10 @@
             </div>
             <div class="col-md-6">
                 <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                    <h2>Add borders</h2>
-                    <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                    <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    <h2>Mejores equipos de curling mixto</h2>
+                    <p>La mayoria de los mejores equipos de curling estan en europa! Como Canada, Suecia, Suiza...</p>
+                    <br>
+                    <button class="btn btn-outline-secondary" type="button" onclick="verLista()">Ver lista</button>
                 </div>
             </div>
         </div><br>
@@ -114,19 +122,27 @@
         <div class="row align-items-md-stretch">
             <div class="col-md-6">
                 <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                    <h2>Add borders</h2>
-                    <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                    <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    <div class="row">
+                      <div class="col-5">
+                        <h2>Canada vs Norway</h2>
+                        <p>Mundial mixto contra los mejores</p>
+                      </div>
+                      <div class="col">
+                        <video width="300" controls autoplay style="border-radius: 15px;">
+                          <source src="../sources/videos/norwayvscanada.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="h-100 p-5 text-bg-dark rounded-3">
                     <div class="row">
                         <div class="col-5">
-                            <h2>Spain wins the silver medal</h2>
-                            <p>The Spanish team has won the silver medal in the mixed world championship.</p>
+                            <h2>Suecia campeon del mundial</h2>
+                            <p>El equipo mixto de suecia gano la medalla de oro</p>
                         </div>
-                        <div class="col"><img src="../sources/img/curlingEspana.jpg" alt="" width="300"></div>
+                        <div class="col"><img src="../sources/img/suecia.jpg" alt="" width="300"></div>
                     </div>
                 </div>
             </div>
